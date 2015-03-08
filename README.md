@@ -3,8 +3,6 @@
 [![Latest Version](https://img.shields.io/github/release/rtablada/inspector-gadget.svg?style=flat-square)](https://github.com/rtablada/inspector-gadget/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/rtablada/inspector-gadget/master.svg?style=flat-square)](https://travis-ci.org/rtablada/inspector-gadget)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/rtablada/inspector-gadget.svg?style=flat-square)](https://scrutinizer-ci.com/g/rtablada/inspector-gadget/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/rtablada/inspector-gadget.svg?style=flat-square)](https://scrutinizer-ci.com/g/rtablada/inspector-gadget)
 [![Total Downloads](https://img.shields.io/packagist/dt/rtablada/inspector-gadget.svg?style=flat-square)](https://packagist.org/packages/rtablada/inspector-gadget)
 
 Inspector Gadget is a [web-component](https://css-tricks.com/modular-future-web-components/) and [Ember.js](http://emberjs.com) inspired library for improving data-flow, maintainability, and template reusability.
