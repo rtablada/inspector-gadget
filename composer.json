@@ -17,10 +17,11 @@
     ],
     "require": {
         "php" : ">=5.3.0",
-        "mockery/mockery": "0.9.*",
-        "illuminate/foundation": "~5"
+        "illuminate/support": "~5",
+        "illuminate/contracts": "~5"
     },
     "require-dev": {
+        "mockery/mockery": "0.9.*",
         "phpunit/phpunit" : "4.*",
         "scrutinizer/ocular": "~1.1"
     },
@@ -32,11 +33,6 @@
     "autoload-dev": {
         "psr-4": {
             "Rtablada\\InspectorGadget\\Test\\": "tests"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "1.0-dev"
         }
     }
 }
