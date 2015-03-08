@@ -156,6 +156,19 @@ public function show($id)
 </div>
 ```
 
+## Configuring
+
+### Default Namespace
+
+To shorten the need for full class names in your `Gadget::make` calls, Inspector Gadget has a `namespace` configuration option in the `config/inspector-gadget.php` file.
+This is used as a default namespace to look up gadgets.
+If a class is not found in your configured default namespace, then Inspector Gadget will attempt to load from the full class name.
+
+### Aliases
+
+To further shorthand and ease, you can register aliases in the `aliases` array in the `config/inspector-gadget.php` file.
+This allows for gadgets to be aliased without poluting the app container.
+
 ## Testing
 
 ``` bash
