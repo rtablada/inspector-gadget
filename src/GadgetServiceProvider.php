@@ -20,6 +20,8 @@ class GadgetServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        $this->registerConfig();
+
         $app = $this->app;
         $view =$this->app['view'];
         $gadgetFactory = $this->app['gadget'];
@@ -38,6 +40,13 @@ class GadgetServiceProvider extends ServiceProvider
 
         $gadgetFactory->registerAliases($aliases);
         $gadgetFactory->setNamespace($namespace);
+    }
+
+    public function registerConfig()
+    {
+        $this->publishes([
+            __DIR__.'/config.php' => config_path('inspector-gadget.php'),
+        ]);
     }
 
     public function provides()
