@@ -29,10 +29,8 @@ class GadgetServiceProvider extends ServiceProvider
         $view->share('gadgetFactory', $gadgetFactory);
         $blade = $view->getEngineResolver()->resolve('blade')->getCompiler();
 
-        $blade->extend(function($view, BladeCompiler $compiler) {
-            $pattern = $compiler->createMatcher('gadget');
-
-            return preg_replace($pattern, '<?php echo app(\'gadget\')->make$2; ?>', $view);
+        $blade->directive('gadget', function($expression) {
+            return "<?php echo app('gadget')->make{$expression}; ?>";
         });
 
         $aliases = $this->app['config']->get('inspector-gadget.aliases', []);
